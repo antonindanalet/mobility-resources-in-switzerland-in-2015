@@ -8,3 +8,5 @@ To run this code, you need to:
 - have pandas installed
 
 Once you get the data of the MTMC, please copy *haushalte.csv* and *zielpersonen.csv* in *data/source_data/mtmc*.
+
+Data sources: The population of the communes of Switzerland (state: 01/01/2015) is used by this code. It is in *source_data/population_by_commune_2015.csv*. The data come from the Swiss Federal Statistical Office (FSO), STAT-TAB: https://www.bfs.admin.ch/bfs/en/home/services/recherche/stat-tab-online-data-search.html
