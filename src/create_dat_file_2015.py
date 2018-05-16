@@ -4,7 +4,7 @@ import pandas as pd
 from mtmc.utils_mtmc.get_mtmc_files import *
 
 
-def create_dat_file_2015():
+def create_dat_file_2015(working_directory_for_biogeme):
         df_zp = get_zp_renamed()
         df_hh = get_hh_renamed_and_with_clean_na()
         df_pop = read_pop()  # provides the population by commune
@@ -12,7 +12,6 @@ def create_dat_file_2015():
         full_data = pd.merge(full_data, df_pop, how='left', right_index=True, left_on='W_BFS')
         full_data['pop'].fillna('-99', inplace=True)
         # Save the data
-        working_directory_for_biogeme = '../data/output_data/biogeme/'
         new_csv_file_name = 'MTMC_2015_mobility_tools.dat'
         full_data.to_csv(working_directory_for_biogeme + new_csv_file_name, sep='\t', index=False)
         print 'New data file', new_csv_file_name, 'saved in', working_directory_for_biogeme
