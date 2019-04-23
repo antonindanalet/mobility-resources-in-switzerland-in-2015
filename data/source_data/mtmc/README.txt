@@ -1,0 +1,1 @@
+Please add the files 'haushalte.csv' and 'zielpersonen.csv' in this folder.
