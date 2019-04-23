@@ -1,5 +1,5 @@
 # mobility-resources-in-switzerland-in-2015
-This code generates a data file based on the row data of the <a href="www.are.admin.ch/mtmc">Mobility and Transport Microcensus 2015</a>. The generated data file can then be used with <a href="https://biogeme.epfl.ch/">Biogeme</a> in order to estimate a discrete choice model for the choice of mobility resources in Switzerland in 2015. Two models are available in <a href="https://github.com/antonindanalet/mobility-resources-in-switzerland-in-2015/tree/master/data/output_data/biogeme">/data/output_data/biogeme</a>:
+This code generates a data file based on the row data of the <a href="www.are.admin.ch/mtmc">Mobility and Transport Microcensus 2015</a>. The generated data file can then be used with <a href="https://biogeme.epfl.ch/">BisonBiogeme</a> in order to estimate a discrete choice model for the choice of mobility resources in Switzerland in 2015. Two models are available in <a href="https://github.com/antonindanalet/mobility-resources-in-switzerland-in-2015/tree/master/data/output_data/biogeme">/data/output_data/biogeme</a>:
 - One model specification corresponds to our paper presented at the 18th Swiss Transport Research Conference (STRC)
 - One model specification corresponds to what was used for the generation of a synthetic population (SynPop)
 
