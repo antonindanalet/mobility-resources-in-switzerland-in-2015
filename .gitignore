@@ -1,3 +1,10 @@
+# Original files from the MTMC
+data/source_data/mtmc/haushalte.csv
+data/source_data/mtmc/zielpersonen.csv
+
+# Output of the code
+data/output_data/biogemeMTMC_2015_mobility_tools.dat
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
