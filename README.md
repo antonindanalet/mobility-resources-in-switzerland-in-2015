@@ -7,7 +7,7 @@ This code generates a data file based on the row data of the <a href="www.are.ad
 To run this code, you need to:
 - install biogeme: http://biogeme.epfl.ch/.
 - get the data of the Mobility and Transport Microcensus. To know more about the data, please check: http://www.are.admin.ch/mtmc (this page exists in English, German, French and Italian). The process to get the data is described in French in https://www.are.admin.ch/are/fr/home/media-et-publications/publications/bases/mikrozensus-mobilitat-und-verkehr-2015-mogliche-zusatzauswertung.html and in German in German in https://www.are.admin.ch/are/de/home/medien-und-publikationen/publikationen/grundlagen/mikrozensus-mobilitat-und-verkehr-2015-mogliche-zusatzauswertung.html. When you don't understand these two languages, just write to mobilita2015@bfs.admin.ch.
-- have python 3.6.1 with pandas installed
+- have python 3 with pandas installed
 
 Once you get the data of the MTMC, please copy *haushalte.csv* and *zielpersonen.csv* in *data/source_data/mtmc*.
 
