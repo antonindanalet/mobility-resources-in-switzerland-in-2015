@@ -13,14 +13,15 @@ def create_dat_file_2015(working_directory_for_biogeme):
         full_data['pop'].fillna('-99', inplace=True)
         # Save the data
         new_csv_file_name = 'MTMC_2015_mobility_tools.dat'
-        full_data.to_csv(working_directory_for_biogeme + new_csv_file_name, sep='\t', index=False)
+        full_data.to_csv(working_directory_for_biogeme / new_csv_file_name, sep='\t', index=False)
         print('New data file', new_csv_file_name, 'saved in', working_directory_for_biogeme)
         full_data['year'] = 2015
         full_data['uber'] = 0
         return full_data
 
 
-def define_choice_variable(row):
+def define_choice_variable_strc(row):
+    """ This is the version of the choice variable used for our paper at the Swiss Transport Research Conference."""
     if row['car_avail'] == -98:  # no information about car availability
         return -98
     elif row['car_avail'] == 1:  # always a car available
@@ -51,8 +52,75 @@ def define_choice_variable(row):
                 return -98
         else:  # no information about GA
             return -98
-    # car available not available, available on demand, or people younger than 18 or without driving license
+    # car not available, available on demand, or people younger than 18 or without driving license
     elif row['car_avail'] == 3 or row['car_avail'] == 2 or row['car_avail'] == -99:
+        if row['GA_ticket'] == 1:  # GA
+            if row['halbtax_ticket'] == 1:
+                # print 'Warning: person with GA and HT!'
+                return 4
+            # No HT or not available to people younger than 16
+            elif row['halbtax_ticket'] == 2 or row['halbtax_ticket'] == -99:
+                return 4  # GA (no HT)
+            else:
+                return -98
+        elif row['GA_ticket'] == 2:  # No GA
+            if row['halbtax_ticket'] == 1:  # HT
+                if row['Verbund_Abo'] == 1:
+                    return 50  # HT + Verbundabo (no GA)
+                elif row['Verbund_Abo'] == 2:
+                    return 5  # HT (no GA, no Verbundabo)
+                else:  # no info about Verbundabo
+                    return -98
+            # No HT or not available to people younger than 16
+            elif row['halbtax_ticket'] == 2 or row['halbtax_ticket'] == -99:
+                if row['Verbund_Abo'] == 1:
+                    return 60  # Verbundabo (no GA, no HT)
+                elif row['Verbund_Abo'] == 2:
+                    return 6  # Nothing (no GA, no Verbundabo, no HT)
+                else:  # no info about Verbundabo
+                    return -98
+            else:  # no info about HT
+                return -98
+        else:  # no information about GA
+            return -98
+    elif row['car_avail'] == -98 or row['car_avail'] == -97:  # no answer or does not know
+        return -98
+
+
+def define_choice_variable_synpop(row):
+    """ This is the version of the choice variable used for the generation of the synthetic population (SynPop)."""
+    if row['car_avail'] == -98:  # no information about car availability
+        return -98
+    elif row['car_avail'] == 1 or row['car_avail'] == 2:  # car always available or available on demand
+        if row['GA_ticket'] == 1:  # GA
+            if row['halbtax_ticket'] == 1:
+                # Warning: Person with car available, GA and HT are considered as "car + GA"
+                return 1
+            elif row['halbtax_ticket'] == 2:  # No HT
+                return 1  # Auto + GA (no HT)
+            else:
+                return -98
+        elif row['GA_ticket'] == 2:  # No GA
+            if row['halbtax_ticket'] == 1:  # HT
+                if row['Verbund_Abo'] == 1:
+                    return 20  # Auto + HT + Verbundabo (no GA)
+                elif row['Verbund_Abo'] == 2:
+                    return 2  # Auto + HT (no GA, no Verbundabo)
+                else:  # no info about Verbundabo
+                    return -98
+            elif row['halbtax_ticket'] == 2:  # No HT
+                if row['Verbund_Abo'] == 1:
+                    return 30  # Auto + Verbundabo (no GA, no HT)
+                elif row['Verbund_Abo'] == 2:
+                    return 3  # Car available (no GA, no Verbundabo, no HT)
+                else:  # no info about Verbundabo
+                    return -98
+            else:  # no info about HT
+                return -98
+        else:  # no information about GA
+            return -98
+    # car not available, available on demand, or people younger than 18 or without driving license
+    elif row['car_avail'] == 3 or row['car_avail'] == -99:
         if row['GA_ticket'] == 1:  # GA
             if row['halbtax_ticket'] == 1:
                 # print 'Warning: person with GA and HT!'
@@ -143,10 +211,8 @@ def get_zp_renamed():
     df_zp['halbtax_ticket'].replace({-97: -98}, inplace=True)
     df_zp['GA_ticket'].replace({-99: -98}, inplace=True)
     df_zp['GA_ticket'].replace({-97: -98}, inplace=True)
-    # Create the choice variable
-    df_zp['choice'] = df_zp.apply(define_choice_variable, axis=1)
+    ''' Create the choice variable - now directly defined in the model specification file and not any more hardcoded in 
+    the data file '''
+    df_zp['choice_STRC'] = df_zp.apply(define_choice_variable_strc, axis=1)
+    df_zp['choice_SynPop'] = df_zp.apply(define_choice_variable_synpop, axis=1)
     return df_zp
-
-
-if __name__ == '__main__':
-    create_dat_file_2015()
