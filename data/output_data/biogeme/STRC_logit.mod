@@ -7,7 +7,7 @@
 // MTMC 2015
 
 [Choice]
-choice
+choice_STRC
 
 [Beta]
 // Name Value  LowerBound UpperBound  status (0=variable, 1=fixed)
