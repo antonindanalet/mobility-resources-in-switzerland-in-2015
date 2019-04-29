@@ -62,7 +62,7 @@ B_studying_CarAvail_GA		0 -10              10              0
 B_inactive_CarAvail_GA		0 -10              10              0
 B_active_without_known_work_percentage_CarAvail_GA		0 -10              10              1
 B_no_post_school_educ_CarAvail_GA		0 -10              10              1
-B_secundary_education_CarAvail_GA		0 -10              10              0
+B_secondary_education_CarAvail_GA		0 -10              10              0
 B_tertiary_education_CarAvail_GA		0 -10              10              0
 B_university_CarAvail_GA		0 -10              10              0
 //B_HH_staedtisch_CarAvail_GA		0 -10              10              0
@@ -109,7 +109,7 @@ B_studying_CarAvail_HT		0 -10              10              0
 B_inactive_CarAvail_HT	0 -10              10              0
 B_active_without_known_work_percentage_CarAvail_HT		0 -10              10              1
 B_no_post_school_educ_CarAvail_HT		0 -10              10              1
-B_secundary_education_CarAvail_HT		0 -10              10              0
+B_secondary_education_CarAvail_HT		0 -10              10              0
 B_tertiary_education_CarAvail_HT		0 -10              10              0
 B_university_CarAvail_HT		0 -10              10              0
 //B_HH_staedtisch_CarAvail_HT		0 -10              10              0
@@ -155,7 +155,7 @@ B_studying_CarAvail		0 -10              10              0
 B_inactive_CarAvail		0 -10              10              0
 B_active_without_known_work_percentage_CarAvail		0 -10              10              1
 B_no_post_school_educ_CarAvail		0 -10              10              1
-B_secundary_education_CarAvail		0 -10              10              0
+B_secondary_education_CarAvail		0 -10              10              0
 B_tertiary_education_CarAvail		0 -10              10              0
 B_university_CarAvail		0 -10              10              0
 //B_HH_staedtisch_CarAvail		0 -10              10              0
@@ -201,7 +201,7 @@ B_studying_CarAvail_HT_Verbund		0 -10              10              0
 B_inactive_CarAvail_HT_Verbund		0 -10              10              0
 B_active_without_known_work_percentage_CarAvail_HT_Verbund		0 -10              10              1
 B_no_post_school_educ_CarAvail_HT_Verbund		0 -10              10              1
-B_secundary_education_CarAvail_HT_Verbund		0 -10              10              0
+B_secondary_education_CarAvail_HT_Verbund		0 -10              10              0
 B_tertiary_education_CarAvail_HT_Verbund		0 -10              10              0
 B_university_CarAvail_HT_Verbund		0 -10              10              0
 //B_HH_staedtisch_CarAvail_HT_Verbund		0 -10              10              0
@@ -247,7 +247,7 @@ B_studying_CarAvail_Verbund		0 -10              10              0
 B_inactive_CarAvail_Verbund		0 -10              10              0
 B_active_without_known_work_percentage_CarAvail_Verbund		0 -10              10              1
 B_no_post_school_educ_CarAvail_Verbund		0 -10              10              1
-B_secundary_education_CarAvail_Verbund		0 -10              10              0
+B_secondary_education_CarAvail_Verbund		0 -10              10              0
 B_tertiary_education_CarAvail_Verbund		0 -10              10              0
 B_university_CarAvail_Verbund		0 -10              10              0
 //B_HH_staedtisch_CarAvail_Verbund		0 -10              10              0
@@ -296,7 +296,7 @@ B_studying_GA		0 -10              10              0
 B_inactive_GA		0 -10              10              0
 B_active_without_known_work_percentage_GA		0 -10              10              1
 B_no_post_school_educ_GA		0 -10              10              1
-B_secundary_education_GA		0 -10              10              0
+B_secondary_education_GA		0 -10              10              0
 B_tertiary_education_GA		0 -10              10              0
 B_university_GA		0 -10              10              0
 //B_HH_staedtisch_GA		0 -10              10              0
@@ -344,7 +344,7 @@ B_studying_HT		0 -10              10              0
 B_inactive_HT		0 -10              10              0
 B_active_without_known_work_percentage_HT		0 -10              10              1
 B_no_post_school_educ_HT		0 -10              10              1
-B_secundary_education_HT		0 -10              10              0
+B_secondary_education_HT		0 -10              10              0
 B_tertiary_education_HT		0 -10              10              0
 B_university_HT		0 -10              10              0
 //B_HH_staedtisch_HT		0 -10              10              0
@@ -393,7 +393,7 @@ B_studying_HT_Verbund		0 -10              10              0
 B_inactive_HT_Verbund		0 -10              10              0
 B_active_without_known_work_percentage_HT_Verbund		0 -10              10              1
 B_no_post_school_educ_HT_Verbund		0 -10              10              1
-B_secundary_education_HT_Verbund		0 -10              10              0
+B_secondary_education_HT_Verbund		0 -10              10              0
 B_tertiary_education_HT_Verbund		0 -10              10              0
 B_university_HT_Verbund		0 -10              10              0
 //B_HH_staedtisch_HT_Verbund		0 -10              10              0
@@ -443,7 +443,7 @@ B_studying_Verbund		0 -10              10              0
 B_inactive_Verbund		0 -10              10              0
 B_active_without_known_work_percentage_Verbund		0 -10              10              1
 B_no_post_school_educ_Verbund		0 -10              10              1
-B_secundary_education_Verbund		0 -10              10              0
+B_secondary_education_Verbund		0 -10              10              0
 B_tertiary_education_Verbund		0 -10              10              0
 B_university_Verbund		0 -10              10              0
 //B_HH_staedtisch_Verbund		0 -10              10              0
@@ -493,7 +493,7 @@ B_university_Verbund		0 -10              10              0
 	+ B_inactive_CarAvail_GA * inactive
 	+ B_active_without_known_work_percentage_CarAvail_GA * active_without_known_work_percentage
 	+ B_no_post_school_educ_CarAvail_GA * no_post_school_educ
-	+ B_secundary_education_CarAvail_GA * secundary_education
+	+ B_secondary_education_CarAvail_GA * secondary_education
 	+ B_tertiary_education_CarAvail_GA * tertiary_education
 	+ B_university_CarAvail_GA * university
 	//+ B_HH_staedtisch_CarAvail_GA * hh_staedtisch
@@ -541,7 +541,7 @@ B_university_Verbund		0 -10              10              0
 	+ B_inactive_CarAvail_HT * inactive
 	+ B_active_without_known_work_percentage_CarAvail_HT * active_without_known_work_percentage
 	+ B_no_post_school_educ_CarAvail_HT * no_post_school_educ
-	+ B_secundary_education_CarAvail_HT * secundary_education
+	+ B_secondary_education_CarAvail_HT * secondary_education
 	+ B_tertiary_education_CarAvail_HT * tertiary_education
 	+ B_university_CarAvail_HT * university
 	//+ B_HH_staedtisch_CarAvail_HT * hh_staedtisch
@@ -588,7 +588,7 @@ B_university_Verbund		0 -10              10              0
 	+ B_inactive_CarAvail * inactive
 	+ B_active_without_known_work_percentage_CarAvail * active_without_known_work_percentage
 	+ B_no_post_school_educ_CarAvail * no_post_school_educ
-	+ B_secundary_education_CarAvail * secundary_education
+	+ B_secondary_education_CarAvail * secondary_education
 	+ B_tertiary_education_CarAvail * tertiary_education
 	+ B_university_CarAvail * university
 	//+ B_HH_staedtisch_CarAvail * hh_staedtisch
@@ -635,7 +635,7 @@ B_university_Verbund		0 -10              10              0
 	+ B_inactive_CarAvail_HT_Verbund * inactive
 	+ B_active_without_known_work_percentage_CarAvail_HT_Verbund * active_without_known_work_percentage
 	+ B_no_post_school_educ_CarAvail_HT_Verbund * no_post_school_educ
-	+ B_secundary_education_CarAvail_HT_Verbund * secundary_education
+	+ B_secondary_education_CarAvail_HT_Verbund * secondary_education
 	+ B_tertiary_education_CarAvail_HT_Verbund * tertiary_education
 	+ B_university_CarAvail_HT_Verbund * university
 	//+ B_HH_staedtisch_CarAvail_HT_Verbund * hh_staedtisch
@@ -682,7 +682,7 @@ B_university_Verbund		0 -10              10              0
 	+ B_inactive_CarAvail_Verbund * inactive
 	+ B_active_without_known_work_percentage_CarAvail_Verbund * active_without_known_work_percentage
 	+ B_no_post_school_educ_CarAvail_Verbund * no_post_school_educ
-	+ B_secundary_education_CarAvail_Verbund * secundary_education
+	+ B_secondary_education_CarAvail_Verbund * secondary_education
 	+ B_tertiary_education_CarAvail_Verbund * tertiary_education
 	+ B_university_CarAvail_Verbund * university
 	//+ B_HH_staedtisch_CarAvail_Verbund * hh_staedtisch
@@ -732,7 +732,7 @@ B_university_Verbund		0 -10              10              0
 	+ B_inactive_GA * inactive
 	+ B_active_without_known_work_percentage_GA * active_without_known_work_percentage
 	+ B_no_post_school_educ_GA * no_post_school_educ
-	+ B_secundary_education_GA * secundary_education
+	+ B_secondary_education_GA * secondary_education
 	+ B_tertiary_education_GA * tertiary_education
 	+ B_university_GA * university
 	//+ B_HH_staedtisch_GA * hh_staedtisch
@@ -781,7 +781,7 @@ B_university_Verbund		0 -10              10              0
 	+ B_inactive_HT * inactive
 	+ B_active_without_known_work_percentage_HT * active_without_known_work_percentage
 	+ B_no_post_school_educ_HT * no_post_school_educ
-	+ B_secundary_education_HT * secundary_education
+	+ B_secondary_education_HT * secondary_education
 	+ B_tertiary_education_HT * tertiary_education
 	+ B_university_HT * university
 	//+ B_HH_staedtisch_HT * hh_staedtisch
@@ -833,7 +833,7 @@ B_university_Verbund		0 -10              10              0
 	+ B_inactive_HT_Verbund * inactive
 	+ B_active_without_known_work_percentage_HT_Verbund * active_without_known_work_percentage
 	+ B_no_post_school_educ_HT_Verbund * no_post_school_educ
-	+ B_secundary_education_HT_Verbund * secundary_education
+	+ B_secondary_education_HT_Verbund * secondary_education
 	+ B_tertiary_education_HT_Verbund * tertiary_education
 	+ B_university_HT_Verbund * university
 	//+ B_HH_staedtisch_HT_Verbund * hh_staedtisch
@@ -884,7 +884,7 @@ B_university_Verbund		0 -10              10              0
 	+ B_inactive_Verbund * inactive
 	+ B_active_without_known_work_percentage_Verbund * active_without_known_work_percentage
 	+ B_no_post_school_educ_Verbund * no_post_school_educ
-	+ B_secundary_education_Verbund * secundary_education
+	+ B_secondary_education_Verbund * secondary_education
 	+ B_tertiary_education_Verbund * tertiary_education
 	+ B_university_Verbund * university
 	//+ B_HH_staedtisch_Verbund * hh_staedtisch
@@ -931,7 +931,7 @@ studying = (ERWERB == 3)
 inactive = (ERWERB == 4)
 active_without_known_work_percentage = (ERWERB == 9)
 no_post_school_educ = (highest_educ == 1) || (highest_educ == 2) || (highest_educ == 3) || (highest_educ == 4)
-secundary_education = (highest_educ == 5) || (highest_educ == 6) || (highest_educ == 7) || (highest_educ == 8) || (highest_educ == 9) || (highest_educ == 10) || (highest_educ == 11) || (highest_educ == 12)
+secondary_education = (highest_educ == 5) || (highest_educ == 6) || (highest_educ == 7) || (highest_educ == 8) || (highest_educ == 9) || (highest_educ == 10) || (highest_educ == 11) || (highest_educ == 12)
 tertiary_education = (highest_educ == 13) || (highest_educ == 14) || (highest_educ == 15) || (highest_educ == 16)
 university = (highest_educ == 17)
 //hh_staedtisch = (Stadt_Land_12 == 1)
