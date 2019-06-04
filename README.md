@@ -15,7 +15,7 @@ Once you get the data of the MTMC, please copy *haushalte.csv* and *zielpersonen
 The paper presenting the results is available on http://www.strc.ch/2018/Danalet_Mathys.pdf.
 
 ## The synthetic population
-To know more about the synthetic population, check https://www.are.admin.ch/flnm
+To know more about the synthetic population, check https://www.are.admin.ch/flnm. To know more about the choice model for mobility ressources used to generate this synthetic population, check <a href="https://www.are.admin.ch/are/fr/home/media-et-publications/publications/bases/modele-de-choix-des-ressources-de-mobilite.html">its description (only in French)</a>.
 
 ## Data sources
 The population of the communes of Switzerland (state: 01/01/2015) is used by this code. It is in *source_data/population_by_commune_2015.csv*. The data come from the Swiss Federal Statistical Office (FSO), STAT-TAB: https://www.bfs.admin.ch/bfs/en/home/services/recherche/stat-tab-online-data-search.html
