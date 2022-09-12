@@ -19,7 +19,3 @@ To know more about the synthetic population, check https://www.are.admin.ch/flnm
 
 ## Data sources
 The population of the communes of Switzerland (state: 01/01/2015) is used by this code. It is in *source_data/population_by_commune_2015.csv*. The data come from the Swiss Federal Statistical Office (FSO), STAT-TAB: https://www.bfs.admin.ch/bfs/en/home/services/recherche/stat-tab-online-data-search.html
-
-## Contact
-
-Please don't hesitate to contact me if you have questions or comments about this code: antonin.danalet@are.admin.ch
